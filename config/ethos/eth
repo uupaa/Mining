@@ -70,7 +70,7 @@ mem 86.04.8D.00.41 4302
 pwr 86.04.8D.00.41 100
 fan 86.04.8D.00.41 70
 
-## --- TUNE LOG ---
+### --- TUNE LOG ---
 ### GTX 1070TI (KU): {
 ###   default_core:  1911 + 150  = 2061,
 ###   default_mem:   3802 * 500  = 4302,
@@ -87,6 +87,7 @@ fan 86.04.8D.00.41 70
 ###     pwr:  80 -> xx (ALL CRASH)
 ###   }
 ### }
+###
 ### GTX 1060 (KU): {
 ###   default_core:  2025 + 150  = 2175, (INDIVIDUAL LIMIT 2125)
 ###   default_mem:   3802 * 500  = 4302, (INDIVIDUAL LIMIT 4302)
@@ -112,6 +113,7 @@ fan 86.04.8D.00.41 70
 ###     cor: 2125, mem: 4302, pwr: 73 -> 19.07 MH (ETH) (SAFE NICE)
 ###   }
 ### }
+###
 ### GTX 1060 (PA): {
 ###   default_core:  2025 + 150  = 2175,
 ###   default_mem:   3802 * 500  = 4302,
@@ -128,3 +130,13 @@ fan 86.04.8D.00.41 70
 ###     cor: 2125, mem: 4302, pwr: 73 -> 22.75 MH (ETH) (SAFE NICE)
 ###   }
 ### }
+###
+### GTX 1050 Ti (KU): {
+###   default_core:  1923 + 150  = 2073,
+###   default_mem:   3504 + 500  = 4004,
+###   default_watts:   75 * 0.73 = 55,
+###   tune: {
+###     
+###   }
+### }
+###
