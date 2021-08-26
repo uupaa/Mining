@@ -29,25 +29,25 @@ miner 7502dd ethminer
 ## | PALIT        | PA         |
 ##
 ## --- GPU SETTING PARAMS with ETH Mining ---
-## | GPU NAME     | MID | BIOS NAME      | cor (DEF)   | mem (DEF)   | pwr (DEF) | fan | Hash | Hash |
-##                                                                                     |(2018)|(2021)|
-## |--------------|-----|----------------|-------------|-------------|-----------|-----|------|------|
-## | GTX 1070 Ti  | KU  | 86.04.85.00.8D | 2061 (1911) | 4302 (3802) | 100 (180) | 70  | 30.8 | 29.0 |
-## | GTX 1070 Ti  | KU  | 86.04.8D.00.41 | 2061 (1911) | 4302 (3802) | 100 (180) | 70  | 30.8 | 29.0 |
-## | GTX 1060 6GB | PA  | 86.06.63.00.C9 | 2125 (2025) | 4302 (3802) | 73  (120) | 70  | 22.7 | 19.0 |
-## | GTX 1060 6GB | KU  | 86.06.63.00.68 | 2175 (2025) | 4302 (3802) | 79  (120) | 70  | 19.0 | 19.1 |
-## | GTX 1050 Ti  | KU  | 86.07.42.00.2C | 2073 (1923) | 4004 (3504) | 55  (75)  | 70  | 14.0 | 0.0 (because: NEED 4.1GB GPU MEM by EPOC) |
-## | GTX 1050 Ti  | AS  | 86.07.42.00.96 | 2073        | 3760        | 55  (75)  | 60  | 13.0 | 0.0 (because: NEED 4.1GB GPU MEM by EPOC) |
+## | GPU NAME     | MID | BIOS NAME      | Group | cor (DEF)   | mem (DEF)   | pwr (DEF) | fan | Hash | Hash |
+##                                                                                             |(2018)|(2021)|
+## |--------------|-----|----------------|-------|-------------|-------------|-----------|-----|------|------|
+## | GTX 1070 Ti  | KU  | 86.04.85.00.8D | B     | 2061 (1911) | 4302 (3802) | 100 (180) | 70  | 30.8 | 29.0 |
+## | GTX 1070 Ti  | KU  | 86.04.8D.00.41 | D     | 2061 (1911) | 4302 (3802) | 100 (180) | 70  | 30.8 | 29.0 |
+## | GTX 1060 6GB | PA  | 86.06.63.00.C9 | A     | 2125 (2025) | 4302 (3802) | 73  (120) | 70  | 22.7 | 19.0 |
+## | GTX 1060 6GB | KU  | 86.06.63.00.68 | C     | 2175 (2025) | 4302 (3802) | 79  (120) | 70  | 19.0 | 19.1 |
+## | GTX 1050 Ti  | KU  | 86.07.42.00.2C |       | 2073 (1923) | 4004 (3504) | 55  (75)  | 70  | 14.0 | 0.0 (because: NEED 4.1GB GPU MEM by EPOC) |
+## | GTX 1050 Ti  | AS  | 86.07.42.00.96 |       | 2073        | 3760        | 55  (75)  | 60  | 13.0 | 0.0 (because: NEED 4.1GB GPU MEM by EPOC) |
 
 ## for Hive OS GPU Number
-## GPU 0 - GTX1060 6GB (BIOS NAME: 86.06.63.00.C9) -> GroupA { cor: 2125, mem: 4302, pwr:  73, fan: 70 }
-## GPU 1 - GTX1060 6GB (BIOS NAME: 86.06.63.00.C9) -> GroupA { cor: 2125, mem: 4302, pwr:  73, fan: 70 }
-## GPU 2 - GTX1070 Ti (BIOS NAME: 86.04.85.00.8D)  -> GroupB { cor: 2061, mem: 4302, pwr: 100, fan: 70 }
-## GPU 3 - GTX1070 Ti (BIOS NAME: 86.04.85.00.8D)  -> GroupB { cor: 2061, mem: 4302, pwr: 100, fan: 70 }
-## GPU 4 - GTX1060 6GB (BIOS NAME: 86.06.63.00.68) -> GroupC { cor: 2125, mem: 4302, pwr:  79, fan: 70 }
-## GPU 5 - GTX1070 Ti (BIOS NAME: 86.04.85.00.8D)  -> GroupB { cor: 2061, mem: 4302, pwr: 100, fan: 70 }
-## GPU 6 - GTX1070 Ti (BIOS NAME: 86.04.8D.00.41)  -> GroupD { cor: 2061, mem: 4302, pwr: 100, fan: 70 }
-## GPU 7 - GTX1060 6GB (BIOS NAME: 86.06.63.00.C9) -> GroupA { cor: 2125, mem: 4302, pwr:  73, fan: 70 }
+## GPU 0 - GTX1060 6GB (BIOS NAME: 86.06.63.00.C9) -> GroupA { core offset: +100 (= 2125 - 2025), mem: 1000, pwr:  73, fan: 70 }
+## GPU 1 - GTX1060 6GB (BIOS NAME: 86.06.63.00.C9) -> GroupA { core offset: +100 (= 2125 - 2025), mem: 1000, pwr:  73, fan: 70 }
+## GPU 2 - GTX1070 Ti (BIOS NAME: 86.04.85.00.8D)  -> GroupB { core offset: +150 (= 2061 - 1911), mem: 1000, pwr: 100, fan: 70 }
+## GPU 3 - GTX1070 Ti (BIOS NAME: 86.04.85.00.8D)  -> GroupB { core offset: +150 (= 2061 - 1911), mem: 1000, pwr: 100, fan: 70 }
+## GPU 4 - GTX1060 6GB (BIOS NAME: 86.06.63.00.68) -> GroupC { core offset: +100 (= 2125 - 2025), mem: 1000, pwr:  79, fan: 70 }
+## GPU 5 - GTX1070 Ti (BIOS NAME: 86.04.85.00.8D)  -> GroupB { core offset: +150 (= 2061 - 1911), mem: 1000, pwr: 100, fan: 70 }
+## GPU 6 - GTX1070 Ti (BIOS NAME: 86.04.8D.00.41)  -> GroupD { core offset: +150 (= 2061 - 1911), mem: 1000, pwr: 100, fan: 70 }
+## GPU 7 - GTX1060 6GB (BIOS NAME: 86.06.63.00.C9) -> GroupA { core offset: +100 (= 2125 - 2025), mem: 1000, pwr:  73, fan: 70 }
 ## GroupA = GTX1060 6GB x 3 { cor: 2125, mem: 4302, pwr:  73, fan: 70 } 
 ## GroupB = GTX1070 Ti  x 3 { cor: 2061, mem: 4302, pwr: 100, fan: 70 }
 ## GroupC = GTX1060 6GX x 1 { cor: 2125, mem: 4302, pwr:  79, fan: 70 }
