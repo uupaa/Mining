@@ -39,25 +39,39 @@ miner 7502dd ethminer
 ## | GTX 1050 Ti  | KU  | 86.07.42.00.2C | 2073 (1923) | 4004 (3504) | 55  (75)  | 70  | 14.0 | 0.0 (because: NEED 4.1GB GPU MEM by EPOC) |
 ## | GTX 1050 Ti  | AS  | 86.07.42.00.96 | 2073        | 3760        | 55  (75)  | 60  | 13.0 | 0.0 (because: NEED 4.1GB GPU MEM by EPOC) |
 
-## --- GTX 1070 Ti (KU)(BIOS NAME: 86.04.8D.00.41) ---
+## for Hive OS GPU Number
+## GPU 0 - GTX1060 6GB (BIOS NAME: 86.06.63.00.C9) -> GroupA { cor: 2125, mem: 4302, pwr:  73, fan: 70 }
+## GPU 1 - GTX1060 6GB (BIOS NAME: 86.06.63.00.C9) -> GroupA { cor: 2125, mem: 4302, pwr:  73, fan: 70 }
+## GPU 2 - GTX1070 Ti (BIOS NAME: 86.04.85.00.8D)  -> GroupB { cor: 2061, mem: 4302, pwr: 100, fan: 70 }
+## GPU 3 - GTX1070 Ti (BIOS NAME: 86.04.85.00.8D)  -> GroupB { cor: 2061, mem: 4302, pwr: 100, fan: 70 }
+## GPU 4 - GTX1060 6GB (BIOS NAME: 86.06.63.00.68) -> GroupC { cor: 2125, mem: 4302, pwr:  79, fan: 70 }
+## GPU 5 - GTX1070 Ti (BIOS NAME: 86.04.85.00.8D)  -> GroupB { cor: 2061, mem: 4302, pwr: 100, fan: 70 }
+## GPU 6 - GTX1070 Ti (BIOS NAME: 86.04.8D.00.41)  -> GroupD { cor: 2061, mem: 4302, pwr: 100, fan: 70 }
+## GPU 7 - GTX1060 6GB (BIOS NAME: 86.06.63.00.C9) -> GroupA { cor: 2125, mem: 4302, pwr:  73, fan: 70 }
+## GroupA = GTX1060 6GB x 3 { cor: 2125, mem: 4302, pwr:  73, fan: 70 } 
+## GroupB = GTX1070 Ti  x 3 { cor: 2061, mem: 4302, pwr: 100, fan: 70 }
+## GroupC = GTX1060 6GX x 1 { cor: 2125, mem: 4302, pwr:  79, fan: 70 }
+## GroupD = GTX1070 Ti  x 1 { cor: 2061, mem: 4302, pwr: 100, fan: 70 }
+
+## --- GTX 1070 Ti (KU)(GroupD)(BIOS NAME: 86.04.8D.00.41) ---
 cor 86.04.8D.00.41 2061
 mem 86.04.8D.00.41 4302
 pwr 86.04.8D.00.41 100
 fan 86.04.8D.00.41 70
 
-## --- GTX 1070 Ti (KU)(BIOS NAME: 86.04.85.00.8D) ---
+## --- GTX 1070 Ti (KU)(GroupB)(BIOS NAME: 86.04.85.00.8D) ---
 cor 86.04.85.00.8D 2061
 mem 86.04.85.00.8D 4302
 pwr 86.04.85.00.8D 100
 fan 86.04.85.00.8D 70
 
-## --- GTX 1060 6GB (PA)(BIOS NAME: 86.06.63.00.C9) ---
+## --- GTX 1060 6GB (PA)(GroupA)(BIOS NAME: 86.06.63.00.C9) ---
 cor 86.06.63.00.C9 2125
 mem 86.06.63.00.C9 4302
 pwr 86.06.63.00.C9 73
 fan 86.06.63.00.C9 70
 
-## --- GTX 1060 6GB (KU)(BIOS NAME: 86.06.63.00.68) ---
+## --- GTX 1060 6GB (KU)(GroupC)(BIOS NAME: 86.06.63.00.68) ---
 cor 86.06.63.00.68 2125
 mem 86.06.63.00.68 4302
 pwr 86.06.63.00.68 79
