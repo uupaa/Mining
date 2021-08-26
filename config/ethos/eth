@@ -44,7 +44,7 @@ miner 7502dd ethminer
 ## GPU 1 - GTX1060 6GB (BIOS NAME: 86.06.63.00.C9) -> GroupA { core offset: +100 (= 2125 - 2025), mem: 1000, pwr:  73, fan: 70 }
 ## GPU 2 - GTX1070 Ti (BIOS NAME: 86.04.85.00.8D)  -> GroupB { core offset: +150 (= 2061 - 1911), mem: 1000, pwr: 100, fan: 70 }
 ## GPU 3 - GTX1070 Ti (BIOS NAME: 86.04.85.00.8D)  -> GroupB { core offset: +150 (= 2061 - 1911), mem: 1000, pwr: 100, fan: 70 }
-## GPU 4 - GTX1060 6GB (BIOS NAME: 86.06.63.00.68) -> GroupC { core offset: +100 (= 2125 - 2025), mem: 1000, pwr:  79, fan: 70 }
+## GPU 4 - GTX1060 6GB (BIOS NAME: 86.06.63.00.68) -> GroupC { core offset: +0                    mem: 1000, pwr:  79, fan: 70 }
 ## GPU 5 - GTX1070 Ti (BIOS NAME: 86.04.85.00.8D)  -> GroupB { core offset: +150 (= 2061 - 1911), mem: 1000, pwr: 100, fan: 70 }
 ## GPU 6 - GTX1070 Ti (BIOS NAME: 86.04.8D.00.41)  -> GroupD { core offset: +150 (= 2061 - 1911), mem: 1000, pwr: 100, fan: 70 }
 ## GPU 7 - GTX1060 6GB (BIOS NAME: 86.06.63.00.C9) -> GroupA { core offset: +100 (= 2125 - 2025), mem: 1000, pwr:  73, fan: 70 }
